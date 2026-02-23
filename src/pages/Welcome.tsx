@@ -2,6 +2,11 @@ import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
 
 export default function Welcome() {
+  const testError = true;
+  if (testError) {
+    throw new Error("Sengaja Error buat ngetes Error Boundary!");
+  }
+
   return (
     <div className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-[#020617] text-white">
       <div className="absolute top-1/4 -left-20 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] animate-pulse" />
