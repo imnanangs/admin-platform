@@ -219,7 +219,7 @@ export default function DefaultLayout() {
           </div>
         </header>
 
-        <main className="flex-1 bg-white border border-slate-200 rounded-2xl overflow-y-auto overflow-x-hidden ">
+        <main className="flex-1 bg-white border border-slate-200 rounded-2xl overflow-y-auto overflow-x-hidden scrollbar-hide">
           <Outlet />
         </main>
       </div>
