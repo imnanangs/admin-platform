@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import LoaderPage from "@/components/LoaderPage";
 import ErrorBoundary from "./components/ErrorBoundary";
-import AppLayout from "@/layouts/DefaultLayout";
+import DefaultLayout from "@/layouts/DefaultLayout";
 
 const Welcome = lazy(() => import("@/pages/Welcome"));
 const Dashboard = lazy(() => import("@/pages/Dashboard"));
@@ -16,7 +16,7 @@ export default function Router() {
         <Routes>
           <Route path="/" element={<Welcome />} />
 
-          <Route element={<AppLayout />}>
+          <Route element={<DefaultLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
           </Route>
           <Route path="*" element={<NotFound />} />
