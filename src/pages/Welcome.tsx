@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
 
 export default function Welcome() {
-  const testError = true;
+  const testError = false;
   if (testError) {
     throw new Error("Sengaja Error buat ngetes Error Boundary!");
   }
